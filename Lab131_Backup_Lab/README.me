@@ -1,1 +1,17 @@
-test
+Backup Lab
+บ่อยครั้งที่ developer มักจะพลาดทิ้งไฟล์ backup ของระบบไว้ในเครื่องเว็บไซด์ ไม่ว่าจะเป็นไฟล์สกุล .sql, .backup, .swp, .old และอื่นๆ ที่เฉพาะเจาะจงเช่น หากใช้ vi command แล้วโปรแกรมถูกปิดไปจะมีการสร้างไฟล์เป็น .<file name>.swp เป็นต้น ซึ่งในไฟล์ backup เหล่านั้นมักจะมีข้อมูลที่สำคัญหรือ logic ของการทำงานที่เราสามารถเปิดดูได้อยู่ โดยข้อมูลเหล่านั้นส่งผลให้ผู้โจมตีสามารถต่อยอดการโจมตีได้มากขึ้นในหลายๆมุมมอง
+
+เครื่องมือที่ใช้ในการค้นหา backup โดยเฉพาะ
+Ohmybackup
+Download source code
+Build package
+Run ohmybackup
+./ohmybackup --hostname <TARGET>
+เช่น
+
+./ohmybackup --hostname http://127.0.0.1
+โดยเราสามารถแก้ไข list ที่ต้องการทดสอบได้นั่นคือ
+
+files/extensions.txt เป็น list ของ extension ที่จะทดสอบ
+files/files.txt เป็น list ของ file ที่จะทดสอบ
+files/folders.txt เป็น list ของ directory ที่จะทดสอบ
